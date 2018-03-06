@@ -1,0 +1,27 @@
+<div class="loading-loader">
+  <div [class.loader]="loading"></div>
+</div>
+
+<div class="row">
+  <div class="col-12" *ngFor="let post of posts; let i=index;  trackBy: trackById;">
+
+    <div class="card" >
+      <div class="card-header d-flex justify-content-between">
+
+        <h3 class="card-title align-self-center"> {{post.title}}</h3>
+        <div>
+          <!--<a name="" id="" class="btn  btn-sm btn-success" (click)="addPost(post.id);"  role="button">Edit</a>-->
+          <a name="" id="" class="btn  btn-sm btn-outline-secondary" (click)="deletePost(post.id, i);" role="button">Delete</a>
+          <a name="" id="" class="btn  btn-sm btn-outline-secondary" (click)="goToPost(post.id);" role="button"> View</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-text"> {{post.body}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<pagination (goPage)="goToPage($event);" (goNext)="onNext();" (goPrev)="onPrev();" [pagesToShow]="3" [page]="page" [pages]="totalPages"
+  [count]="total">
+
+</pagination>

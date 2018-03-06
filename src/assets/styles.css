@@ -1,0 +1,70 @@
+.loading-loader {
+    position: fixed;
+    z-index: 999;
+    height: 0em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: -40%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+body{
+    background:#fafafa;
+}
+
+.card {
+        margin-bottom: 10px;
+    border-radius: 0px;
+    box-shadow: 0px 1px 3px 0px #eee;
+    border: 0px solid #efefef;
+}
+.card-header {
+   background-color:transparent;
+    border-radius: 0px;
+  
+}
+.card-title {
+    margin-bottom: 0rem;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+h3.card-title.align-self-center {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
