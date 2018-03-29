@@ -15,5 +15,5 @@ Example withfollowing libraries and features:
 
 ## Development server
 
-Run `npm start` for a dev server(npm) and hit `http://localhost:4200/` at browser.
+Run `npm start` for a dev server(npm) and hit `http://localhost:8000/` at browser.
 
